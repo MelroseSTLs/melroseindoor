@@ -25,7 +25,7 @@ ul {
 }
 
 .sidenav a {
-	padding: 8px 8px 8px 32px;
+	padding: 8px 8px 8px 8px;
 	text-decoration: none;
 	font-size: 30px;
 	color: white;
@@ -43,13 +43,17 @@ ul {
 	top: 0;
 	right: 10px;
 	font-size: 30px;
+	height: 30px;
+	width: 30px;
 }
 
 .span {
+	display: inline;
 	font-size: 30px;
 	cursor: pointer;
-	width: 20px;
-	margin-left: 16px;
+	width: 30px;
+	height: 30px;
+	margin: 16px;
 }
 
 /* end of sidenav */
@@ -60,12 +64,26 @@ ul {
 	width: 100%;
 }
 
-.topbar {
+.topdiv {
 	display: flex;
 	flex-direction: row;
 }
 
-/* put the logo css here */
+.topbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.toplogo {
+	height: 100%;
+	width: 50%;
+}
+
+.logo {
+	height: 100px;
+	width: 250px;
+}
 
 .text {
 	border: 2px;
@@ -84,7 +102,20 @@ ul {
 	padding: 0;
 }
 
-/* put picture css here */
+/* Photo CSS starts here */
+
+.pictures {
+	display: flex;
+	flex-direction: row;
+}
+
+.photo {
+	width: 50%;
+	height: 50%;
+	margin: 1px;
+}
+
+/* End of Photo CSS */
 
 .link {
 	color: black;
@@ -99,6 +130,11 @@ ul {
 .maps {
 	display: flex;
 	flex-direction: row;
+}
+
+.map {
+	width: 100%;
+	margin: 6px;
 }
 
 /* end of maps css*/
