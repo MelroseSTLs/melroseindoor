@@ -13,7 +13,7 @@ var HttpClient = function() { // Thanks http://stackoverflow.com/a/22076667/1709
 }
 
 var getCsvSheet = new HttpClient();
-getCsvSheet.get("https://cors-anywhere.herokuapp.com/https://docs.google.com/spreadsheet/ccc?key=1S4dX2zBJ0yoEeJ88SOzb4O9Jxxj-TKMZYtxy45dCTsM&output=csv", function(response) {
+getCsvSheet.get("https://cors-anywhere.herokuapp.com/https://docs.google.com/spreadsheet/ccc?key=1_8lgnHCE9KZ2Iu04jJ930d2zTys_ULSo9KMLBlD6nvc&output=csv", function(response) {
 	// Parse local CSV file
 	Papa.parse(response, {
 		complete: function(results) {
