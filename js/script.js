@@ -40,7 +40,7 @@ function changeText(text){
 }
 
 function openNav(){
-	document.getElementById("sidenav").style.width = "30%";
+	document.getElementById("sidenav").style.width = "20%";
 }
 
 function closeNav() {
