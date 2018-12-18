@@ -125,16 +125,3 @@ ul {
 	color: gray;
 }
 
-/* maps css */
-
-.maps {
-	display: flex;
-	flex-direction: row;
-}
-
-.map {
-	width: 100%;
-	margin: 6px;
-}
-
-/* end of maps css*/
