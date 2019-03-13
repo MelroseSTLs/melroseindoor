@@ -1,4 +1,4 @@
-# melroseindoor
+# melrose track
 indoor track website
 This is the unofficial official website to the Melrose Indoor Track team, with the current season's schedule, meet results,
 contact information and much more. 
