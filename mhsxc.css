@@ -48,7 +48,6 @@ ul {
 }
 
 .span {
-	display: inline;
 	font-size: 30px;
 	cursor: pointer;
 	width: 30px;
@@ -64,26 +63,26 @@ ul {
 	width: 100%;
 }
 
+/* topbar start */
+
 .topdiv {
 	display: flex;
 	flex-direction: row;
 }
 
-.topbar {
+.toplogo {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-}
-
-.toplogo {
-	height: 100%;
-	width: 50%;
+	width: 100%;
 }
 
 .logo {
-	height: 100px;
-	width: 250px;
+	height: 62px;
+	width: 595px;
 }
+
+/* end of topbar */
 
 .text {
 	border: 2px;
@@ -102,24 +101,24 @@ ul {
 	padding: 0;
 }
 
-/* Photo CSS starts here */
-
-.pictures {
-	display: flex;
-	flex-direction: row;
-}
-
 .photo {
-	margin: 1px;
+	padding: 4px;
 }
-
-/* End of Photo CSS */
 
 .link {
 	color: black;
 }
 
 .link:hover {
+	color: gray;
+}
+
+.meet {
+	color: black;
+	padding: 4px;
+}
+
+.meet:hover {
 	color: gray;
 }
 
@@ -148,14 +147,12 @@ ul {
   z-index: 1;
 }
 
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-
 
 .dropdown-content a:hover {
 	background-color: gray;
@@ -169,3 +166,4 @@ ul {
 	background-color: red;
 }
 
+/* end of dropdown */
