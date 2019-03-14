@@ -132,11 +132,6 @@ ul {
 	border: none;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
 .dropdown-content {
   font-family: arial;
   display: none;
@@ -167,3 +162,8 @@ ul {
 }
 
 /* end of dropdown */
+
+.results {
+	display: flex;
+	flex-direction: row;
+}
