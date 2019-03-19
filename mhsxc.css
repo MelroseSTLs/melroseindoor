@@ -85,11 +85,13 @@ ul {
 /* end of topbar */
 
 .text {
-	border: 2px;
-	border-style: solid;
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	background-color: #ffa5a5;
 	padding: 8px;
-	margin: 2px;
-	font-size: 16px;
+	margin: 4px;
+	font-size: 20px;
 }
 
 .wntitle {
@@ -113,19 +115,16 @@ ul {
 	color: gray;
 }
 
-.meet {
-	color: black;
-	padding: 4px;
-}
-
-.meet:hover {
-	color: gray;
+.results {
+	display: flex;
+	flex-direction: row;
 }
 
 /* start of dropdown */
 
 .dropbtn {
 	background-color: red;
+	border-radius: 5px;
 	color: white;
 	padding: 16px;
 	font-size: 16px;
@@ -140,6 +139,7 @@ ul {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+	border-radius: 5px;
 }
 
 .dropdown-content a {
@@ -150,7 +150,8 @@ ul {
 }
 
 .dropdown-content a:hover {
-	background-color: gray;
+	background-color: #c4c4c4;
+	border-radius: 5px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -163,7 +164,18 @@ ul {
 
 /* end of dropdown */
 
-.results {
-	display: flex;
-	flex-direction: row;
+/* media query javascript stuff since its a pain to comment in javascript
+
+function openNav(){
+  if (x.matches) {
+    document.getElementById("sidenav").style.width = "50%";
+  } else {
+    document.getElementById("sidenav").style.width = "20%";
+  }
 }
+
+var x = window.matchMedia("(max-width: 414px)")
+openNav()
+x.addListener(openNav)
+
+*/
