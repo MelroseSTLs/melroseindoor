@@ -1,6 +1,5 @@
 body {
 	font-family: arial, sans-serif;
-	font-size: 20px;
 	display: flex;
 	flex-direction: row;
 	background-image: url(pictures/background.jpg);
@@ -9,12 +8,28 @@ body {
 	background-attachment: fixed;
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 1334px) {
 	body {
 		background-image: url(pictures/background-mobile.jpg);
 		background-repeat: no-repeat;
 		background-size: 115%;
 		background-attachment: fixed;
+	}
+
+	div.text {
+		font-size: 30px;
+	}
+
+	span.span {
+		font-size: 40px;
+	}
+
+	button.dropbtn {
+		font-size: 30px;
+	}
+
+	div.dropdown-content {
+		font-size: 30px;
 	}
 }
 
@@ -105,7 +120,6 @@ ul {
 	border-style: solid;
 	border-radius: 5px;
 	background-color: rgba(200,200,200,0.8);
-
 	padding: 8px;
 	margin: 4px;
 	font-size: 20px;
