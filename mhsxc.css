@@ -2,22 +2,25 @@ body {
 	font-family: arial, sans-serif;
 	display: flex;
 	flex-direction: row;
-	background-image: url(pictures/background.jpg);
+	background: url(pictures/background.jpg) fixed;
 	background-repeat: no-repeat;
-	background-size: 110%;
-	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
 }
+
+/* start of media queries */
 
 @media only screen and (orientation: portrait) {
 	body {
-		background-image: url(pictures/background-mobile.jpg);
+		background: url(pictures/background-mobile.jpg) fixed;
 		background-repeat: no-repeat;
-		background-size: 115%;
-		background-attachment: fixed;
+		background-position: center;
+		background-size: cover;
 	}
 
 	div.text {
-		font-size: 30px;
+		font-size: 35px;
+		align-self: auto;
 	}
 
 	span.span {
@@ -31,7 +34,14 @@ body {
 	div.dropdown-content {
 		font-size: 30px;
 	}
+
+	img.logo {
+		height: 68px;
+		width: 655px;
+	}
 }
+
+/*end of media queries*/
 
 ul {
 	margin: 8px;
@@ -109,6 +119,8 @@ ul {
 .logo {
 	height: 62px;
 	width: 595px;
+	-webkit-filter: drop-shadow(2px 2px 0 black);
+	filter: drop-shadow(2px 2px 0 black);
 }
 
 /* end of topbar */
@@ -123,11 +135,13 @@ ul {
 	padding: 8px;
 	margin: 4px;
 	font-size: 20px;
+	align-self: center;
 }
 
 .wntitle {
 	font-weight: bold;
 	margin: 0;
+	align-self: center;
 }
 
 .wnlist {
