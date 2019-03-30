@@ -24,15 +24,20 @@ body {
 	}
 
 	span.span {
-		font-size: 40px;
+		font-size: 50px;
 	}
 
 	button.dropbtn {
-		font-size: 30px;
+		font-size: 40px;
 	}
 
 	div.dropdown-content {
-		font-size: 30px;
+		font-size: 40px;
+	}
+
+	img.logo {
+		height: 93px;
+		width: 893px;
 	}
 }
 
@@ -40,6 +45,12 @@ body {
 
 ul {
 	margin: 8px;
+}
+
+h1 {
+	align-self: center;
+	color: white;
+	filter: drop-shadow(2px 2px 0 black);
 }
 
 /* start of sidenav */
@@ -68,7 +79,7 @@ ul {
 }
 
 .sidenav a:hover {
-    color: white;
+  color: white;
 	background-color: #c60f0f;
 }
 
@@ -115,7 +126,6 @@ ul {
 .logo {
 	height: 62px;
 	width: 595px;
-	-webkit-filter: drop-shadow(2px 2px 0 black);
 	filter: drop-shadow(2px 2px 0 black);
 }
 
@@ -169,7 +179,9 @@ ul {
 	color: white;
 	padding: 16px;
 	font-size: 20px;
-	border: none;
+	border: 2px;
+	border-style: solid;
+	border-color: white;
 }
 
 .dropdown-content {
@@ -202,6 +214,7 @@ ul {
 
 .dropdown:hover .dropbtn {
 	background-color: red;
+	border-color: red;
 }
 
 /* end of dropdown */
